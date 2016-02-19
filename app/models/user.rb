@@ -1,0 +1,22 @@
+class User 
+  include Neo4j::ActiveNode
+  include ActiveModel::SecurePassword
+
+  after_destroy :ensure_an_admin_remains
+
+  validates :name, presence: true, uniqueness: true
+
+  property :name, type: String
+  property :role, type: Integer, default: 1
+  property :password_digest, type: String
+
+  has_secure_password
+
+  private
+  def ensure_an_admin_remains
+    if User.count.zero?
+      raise "Can't delete last user"
+    end
+  end
+
+end

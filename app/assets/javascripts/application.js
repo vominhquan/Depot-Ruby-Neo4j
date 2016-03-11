@@ -14,6 +14,6 @@
 //
 //= require jquery-2.2.1.min
 //= require jquery_ujs
-//= require jquery-ui/effect-blind
 //= require bootrap
+//= require jquery-ui/effect-blind
 //= require_tree .

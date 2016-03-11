@@ -9,10 +9,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= controller.controller_name %>">
+  <!--<%= render 'partial/navbar' %>-->
   <div class="container">
-    <div class= "slide">
-      <%= render 'partial/slide' %>
-    </div>
+
     <div id="main">
       <%= yield %>
     </div>

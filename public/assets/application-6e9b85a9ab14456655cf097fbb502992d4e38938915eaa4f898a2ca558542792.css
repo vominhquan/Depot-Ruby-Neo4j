@@ -13,7 +13,7 @@
 
 
  */
-/* line 18, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 18, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #banner {
   background: #9c9;
   padding: 10px;
@@ -22,12 +22,12 @@
   color: #282;
   text-align: center;
 }
-/* line 26, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 26, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #banner img {
   float: left;
 }
 
-/* line 31, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 31, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #notice {
   color: #000 !important;
   border: 2px solid red;
@@ -37,108 +37,108 @@
   font: bold smaller sans-serif;
 }
 
-/* line 40, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 40, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns {
   background: #141;
 }
-/* line 43, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 43, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #main {
   margin-right: 19em;
   margin-left: 19em;
   padding: 1em;
   background: white;
 }
-/* line 51, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 51, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side {
   float: left;
   padding: 1em 2em;
   width: 15em;
   background: #141;
 }
-/* line 57, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 57, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side form, #columns #side div {
   display: inline;
 }
-/* line 61, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 61, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side input {
   font-size: small;
 }
-/* line 65, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 65, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side #cart {
   font-size: smaller;
   color: white;
 }
-/* line 69, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 69, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side #cart table {
   border-top: 1px dotted #595;
   border-bottom: 1px dotted #595;
   margin-bottom: 10px;
 }
-/* line 76, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 76, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side ul {
   padding: 0;
 }
-/* line 79, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 79, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side ul li {
   list-style: none;
 }
-/* line 82, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 82, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #side ul li a {
   color: #bfb;
   font-size: small;
 }
-/* line 90, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 90, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside {
   float: right;
   padding: 1em 2em;
   width: 15em;
   background: #141;
 }
-/* line 96, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 96, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside form, #columns #rightside div {
   display: inline;
 }
-/* line 100, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 100, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside input {
   font-size: small;
 }
-/* line 104, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 104, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside #cart {
   font-size: smaller;
   color: white;
 }
-/* line 108, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 108, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside #cart table {
   border-top: 1px dotted #595;
   border-bottom: 1px dotted #595;
   margin-bottom: 10px;
 }
-/* line 115, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 115, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside ul {
   padding: 0;
 }
-/* line 118, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 118, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside ul li {
   list-style: none;
 }
-/* line 121, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 121, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 #columns #rightside ul li a {
   color: #bfb;
   font-size: small;
 }
 
-/* line 132, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 132, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 .depot_form fieldset {
   background: #efe;
 }
-/* line 135, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 135, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 .depot_form fieldset legend {
   color: #dfd;
   background: #141;
   font-family: sans-serif;
   padding: 0.2em 1em;
 }
-/* line 144, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 144, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 .depot_form form label {
   width: 5em;
   float: left;
@@ -147,20 +147,20 @@
   margin-right: 0.1em;
   display: block;
 }
-/* line 153, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 153, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 .depot_form form select, .depot_form form textarea, .depot_form form input {
   margin-left: 0.5em;
 }
-/* line 157, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 157, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 .depot_form form .submit {
   margin-left: 4em;
 }
-/* line 161, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 161, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 .depot_form form br {
   display: none;
 }
 
-/* line 167, D:/Code Ruby/DwN/app/assets/stylesheets/application.css.scss */
+/* line 167, D:/Code Ruby/DwN/app/assets/stylesheets/application.css */
 .locale {
   float: right;
   margin: -0.25em 0.1em;

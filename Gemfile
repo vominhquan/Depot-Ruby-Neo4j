@@ -47,3 +47,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'neo4j', '~> 6.1.0'
 
 gem 'coffee-script-source', '1.8.0'
+
+gem 'bootstrap-sass'

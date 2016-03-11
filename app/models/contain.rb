@@ -3,7 +3,7 @@ class Contain
 
     from_class :any
     to_class :Product
-    type :Contain
+    type :CONTAIN
 
     property :quantity, type: Integer
 

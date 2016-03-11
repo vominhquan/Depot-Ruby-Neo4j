@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
 
 
+  get 'recommendation/new'
+
+  get 'recommendation/create'
+
+  get 'recommendation/destroy'
+
+  get 'recommendation/index'
+
+  resources :brands
   get 'admin' => 'admin#index'
 
   controller :sessions do

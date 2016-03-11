@@ -27,6 +27,11 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
+  <div class="field">
+    <%= f.label :brand %><br>
+    <%= f.select :brand, options_from_collection_for_select(Brand.all, :id, :name) , prompt: 'Select a brand' %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

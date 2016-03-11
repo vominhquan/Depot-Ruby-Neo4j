@@ -1,6 +1,8 @@
 if ($('#cart tr').length == 1) { $('#cart').show('blind', 1000); }
 
-$('#cart').html("<%= escape_javascript render(@cart) %>")
+$('#cart').html("<%=j render(@cart) %>");
 
-$('#current_item').css({'background-color':'#88ff88'}).
-  animate({'background-color':'#114411'}, 1000);
+$('.rightside').html("<%=j render('recommendation/recommendation') %>");
+
+$('#current_item').css({'background-color':'yellow'}).
+  animate({'background-color':'white'}, 1000);

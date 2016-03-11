@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   include CurrentCart
-  before_action :create_cart
+  before_action :create_cart,:recc
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products
@@ -70,6 +70,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :description, :image_url, :price, :cart)
+      params.require(:product).permit(:title, :description, :image_url, :price, :cart, :brand)
     end
 end

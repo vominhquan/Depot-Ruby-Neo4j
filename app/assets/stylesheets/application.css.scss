@@ -40,9 +40,11 @@
   background: #141;
 
   #main {
+    margin-right: 19em;
     margin-left: 19em;
     padding: 1em;
     background: white;
+
   }
 
 //#START:side
@@ -52,7 +54,10 @@
     width: 15em;
     background: #141;
 
-    form, div {
+    form{
+      width: 100px;
+    }
+    div {
       display: inline;
     }  
  
@@ -100,14 +105,7 @@
   }
 
   form {
-    label {
-      width: 5em;
-      float: left;
-      text-align: right;
-      padding-top: 0.2em;
-      margin-right: 0.1em;
-      display: block;
-    }
+
 
     select, textarea, input {
       margin-left: 0.5em;
@@ -126,4 +124,59 @@
 .locale {
 float: right;
 margin: -0.25em 0.1em;
+}
+
+.slide{
+  width: 100%;
+  height: 400px;
+
+  .carousel-inner > .item {
+    text-align: center;
+    img {
+      height: 400px; 
+    }
+  }
+}
+
+.low {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.rightside {
+  padding: 1em 2em;
+  width: 15em;
+  background: transparent;
+  img{
+    height: 120px;
+    width: 120px;
+  }
+
+  form, div {
+    display: inline;
+  }
+
+  input {
+    font-size: small;
+  }
+
+  #rec {
+    font-size: smaller;
+    color:     white;
+    table {
+      margin-bottom: 10px;
+    }
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+
+      a {
+        color: #bfb;
+        font-size: small;
+      }
+    }
+  }
 }

@@ -1,0 +1,25 @@
+<% puts '----------------inside _rec-------------------------------' %>
+<% puts @rec_products %>
+<% puts '----------------end _rec-------------------------------' %>
+<% @rec_products %>
+<% if @rec_products %>
+  <h2>Recommendation</h2>
+  <table>
+        <% @rec_products.each do |product| %>
+            <div>
+              <tr>
+                <td><%= product.title %></td>
+              <tr>
+                <%= image_tag(product.image_url)%>
+              </tr>
+              </tr>
+              <tr>
+                <td><%= number_to_currency(product.price) %></td>
+              </tr>
+              <tr>
+                <td><%= button_to 'Add to Cart' , carts_path(product_id: product), remote: true %></td>
+              </tr>
+            </div>
+        <% end %>
+  </table>
+<% end %>

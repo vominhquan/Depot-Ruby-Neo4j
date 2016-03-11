@@ -37,10 +37,11 @@ class CartsController < ApplicationController
       r.first.last.quantity += 1
       r.first.last.save
     end
+    recc
       respond_to do |format|
         if @cart.save
           format.html { redirect_to @cart, notice: 'Cart was successfully created.' }
-          format.js   { @current_item = @p}
+          format.js   { @current_item = @p }
           format.json { render :show, status: :created, location: @cart }
         else
           format.html { render :new }

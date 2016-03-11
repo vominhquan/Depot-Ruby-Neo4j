@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
   include CurrentCart
-  before_action :create_cart
+
+  before_action :create_cart,:recc, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   skip_before_action :authorize, only: [:new, :create]
 
@@ -21,10 +22,7 @@ class OrdersController < ApplicationController
       redirect_to store_path, notice: "Your cart is empty"
       return
     end
-    @cart.add_label :Order
-    @cart.remove_label :Cart
-    @order=Order.find_by(uuid: @cart.uuid)
-    session[:cart_id] = nil
+    @order = Order.new
   end
 
   # GET /orders/1/edit
@@ -34,11 +32,14 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
-    @order = Order.new(order_params)
+    @cart.add_label :Order
+    @cart.remove_label :Cart
+    @order=Order.find_by(uuid: @cart.uuid)
+    @order.update(order_params)
 
     respond_to do |format|
       if @order.save
-        session[:cart_id]= nil
+        session[:cart_id] = nil
         format.html { redirect_to @order, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
       else

@@ -4,7 +4,8 @@
 
 .brands {
   table {
-    border-collapse: collapse;
+    //border-collapse: collapse;
+    width: 100%;
   }
 
   table tr td {
@@ -43,10 +44,10 @@
   }
 
   .list_line_even {
-    background:   #e0f8f8;
+    background:   #f2f2f2;
   }
 
   .list_line_odd {
-    background:   #f8b0f8;
+    background:   #d9d9d9;
   }
 }

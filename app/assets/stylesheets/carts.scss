@@ -1,7 +1,6 @@
 // Place all the styles related to the Carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-/* START_HIGHLIGHT */
  #cart {
 	margin-left: 30px;
 	float: left;
@@ -15,6 +14,20 @@
   form, div {
   	display: inline;
   }
-
 }
-/* END_HIGHLIGHT */
+
+.cart {
+  .list_actions {
+    font-size:    x-small;
+    text-align:   right;
+    padding-left: 1em;
+  }
+
+  .list_line_even {
+    background:   #f2f2f2;
+  }
+
+  .list_line_odd {
+    background:   #d9d9d9;
+  }
+}

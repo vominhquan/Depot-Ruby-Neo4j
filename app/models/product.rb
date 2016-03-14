@@ -21,7 +21,7 @@ class Product
   def self.rec(uuid)
     @rec_products = Neo4j::Session.query("match (c:Cart)-->(p1:Product)<--(o:Order)-->(p2:Product)
                       with count(p1) as num, collect(p1) as commons, c, o, p2
-                      where not(c-->p2) and c.uuid = {cuuid} ///////dafasdfsa
+                      where not(c-->p2) and c.uuid = {cuuid}
                       return p2",{cuuid: uuid}).first
     puts '-----------------------this is what inside @rec_products---------------'
     puts @rec_products

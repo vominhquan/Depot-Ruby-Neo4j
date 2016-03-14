@@ -4,9 +4,12 @@
 
 .products {
   table {
-
     //border-collapse: collapse;
     width:100%;
+  }
+
+  img {
+    width: 200px;
   }
 
   table tr td {
@@ -45,10 +48,10 @@
   }
 
   .list_line_even {
-    background:   #d9d9d9;
+    background:   #f2f2f2;
   }
 
   .list_line_odd {
-    background:   #f2f2f2;
+    background:   #d9d9d9;
   }
 }

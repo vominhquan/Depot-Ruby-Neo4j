@@ -10,13 +10,20 @@
 </head>
 <body class="<%= controller.controller_name %>">
   <%= render 'partial/navbar' %>
-  <div class="container">
-
-    <div id="main">
-      <%= yield %>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class= "slide">
+        <%= render 'partial/slide' %>
+      </div>
     </div>
   </div>
-
+  <div class="row">
+    <div class="container">
+      <div id="main">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
   <div class ="row">
     <div class='col-md-12 low'>
       Copyright things

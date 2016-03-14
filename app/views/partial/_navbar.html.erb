@@ -14,12 +14,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/products">Products</a></li>
+
         <% if session[:cart_id] %>
 				  <li><%= link_to 'Cart', cart_url(session[:cart_id]) %></li>
         <% end %>
 			</ul>
-
 			<ul class="nav navbar-nav navbar-right">
 				<% if session[:user_id] %>
 				<li class="dropdown">
@@ -27,11 +26,20 @@
 					<ul class="dropdown-menu">
 						<li class="active"><a href="/products">Products</a></li>
 						<li><a href="/orders">Orders</a></li>
-		          		<li><%= link_to 'Logout', logout_url, method: :delete %></li>
+            <li><a href="/brands">Brands</a> </li>
+            <li><%= link_to 'Logout', logout_url, method: :delete %></li>
 					</ul>
 				</li>
 				<% else %>
-					<li> <%= link_to 'Login', login_url %> </li>
+            <%= form_tag login_url do %>
+                <fieldset class="form-inline">
+                  <div class="navbar-header">
+                    <%= text_field_tag :name, params[:name], class: "form-control" %>
+                    <%= password_field_tag :password, params[:password], class: "form-control" %>
+                    <%= submit_tag "Login", class: "form-control" %>
+                  </div>
+                </fieldset>
+            <% end %>
 				<% end %>
 				
 			</ul>

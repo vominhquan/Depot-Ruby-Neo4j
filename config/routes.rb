@@ -1,14 +1,5 @@
 Rails.application.routes.draw do
 
-
-  get 'recommendation/new'
-
-  get 'recommendation/create'
-
-  get 'recommendation/destroy'
-
-  get 'recommendation/index'
-
   resources :brands
   get 'admin' => 'admin#index'
 
@@ -25,7 +16,10 @@ Rails.application.routes.draw do
   resources :users
   resources :orders
   resources :carts
+
   get 'store/index'
+  # post 'store/index' => 'admin#index'
+
 
   root 'store#index' , as: 'store'
   resources :products

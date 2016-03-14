@@ -1,3 +1,57 @@
-// Place all the styles related to the Orders controller here.
+// Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.orders {
+  table {
+    //border-collapse: collapse;
+    width:100%;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  table tr td {
+    padding: 5px;
+    vertical-align: top;
+  }
+
+  .list_image {
+    width: 80px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .list_description {
+    width: 60%;
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      color:        #244;
+      font-weight:  bold;
+      font-size:    larger;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .list_actions {
+    font-size:    x-small;
+    text-align:   right;
+    padding-left: 1em;
+  }
+
+  .list_line_even {
+    background:   #f2f2f2;
+  }
+
+  .list_line_odd {
+    background:   #d9d9d9;
+  }
+}

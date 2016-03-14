@@ -4,7 +4,7 @@ class CartsController < ApplicationController
 
   before_action :create_cart, only: [:create]
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
-  skip_before_action :authorize, only: [:create, :update, :destroy]
+  skip_before_action :authorize, only: [:create, :update, :destroy, :show]
 
   # GET /carts
   # GET /carts.json

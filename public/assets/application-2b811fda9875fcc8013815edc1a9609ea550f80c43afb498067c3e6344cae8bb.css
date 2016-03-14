@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -6254,6 +6255,7 @@ button.close {
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
+    width: 100%;
   line-height: 1;
 }
 @media all and (transform-3d), (-webkit-transform-3d) {
@@ -6758,3 +6760,455 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will
+ * include all the files listed below.
+ * 
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets,
+ * vendor/assets/stylesheets, or vendor/assets/stylesheets of plugins, if any,
+ * can be referenced here using a relative path.
+ * 
+ * You're free to add application-wide styles to this file and they'll appear
+ * at the top of the compiled file, but it's generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
+/* line 19, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#banner {
+  background: #9c9;
+  padding: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  text-align: center;
+}
+/* line 27, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#banner img {
+  float: left;
+}
+
+/* line 32, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+/* line 41, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns {
+  background: #141;
+}
+/* line 44, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #main {
+  margin-right: 19em;
+  margin-left: 19em;
+  padding: 1em;
+  background: white;
+}
+/* line 53, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side {
+  float: left;
+  padding: 1em 2em;
+  width: 15em;
+  background: #141;
+}
+/* line 59, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side form {
+  width: 100px;
+}
+/* line 62, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side div {
+  display: inline;
+}
+/* line 66, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side input {
+  font-size: small;
+}
+/* line 70, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side #cart {
+  font-size: smaller;
+  color: white;
+}
+/* line 74, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side #cart table {
+  border-top: 1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
+}
+/* line 81, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side ul {
+  padding: 0;
+}
+/* line 84, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side ul li {
+  list-style: none;
+}
+/* line 87, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+#columns #side ul li a {
+  color: #bfb;
+  font-size: small;
+}
+
+/* line 98, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.depot_form fieldset {
+  background: #efe;
+}
+/* line 101, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.depot_form fieldset legend {
+  color: #dfd;
+  background: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+/* line 112, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.depot_form form select, .depot_form form textarea, .depot_form form input {
+  margin-left: 0.5em;
+}
+/* line 116, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.depot_form form .submit {
+  margin-left: 4em;
+}
+/* line 120, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.depot_form form br {
+  display: none;
+}
+
+/* line 126, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
+}
+
+/* line 131, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.slide {
+  width: 100%;
+  height: 400px;
+}
+/* line 135, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.slide .carousel-inner > .item {
+  text-align: center;
+}
+/* line 137, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.slide .carousel-inner > .item img {
+  height: 400px;
+}
+
+/* line 143, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.low {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+/* line 149, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside {
+  padding: 1em 2em;
+  width: 15em;
+  background: transparent;
+}
+/* line 153, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside img {
+  height: 120px;
+  width: 120px;
+}
+/* line 158, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside form, .rightside div {
+  display: inline;
+}
+/* line 162, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside input {
+  font-size: small;
+}
+/* line 166, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside #rec {
+  font-size: smaller;
+  color: white;
+}
+/* line 169, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside #rec table {
+  margin-bottom: 10px;
+}
+/* line 173, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside ul {
+  padding: 0;
+}
+/* line 175, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside ul li {
+  list-style: none;
+}
+/* line 178, D:/Code Ruby/DwN/app/assets/stylesheets/application.scss */
+.rightside ul li a {
+  color: #bfb;
+  font-size: small;
+}
+/* line 6, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands table {
+  border-collapse: collapse;
+}
+/* line 10, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+/* line 15, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_image {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/* line 21, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_description {
+  width: 60%;
+}
+/* line 24, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_description dl {
+  margin: 0;
+}
+/* line 28, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 34, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_description dd {
+  margin: 0;
+}
+/* line 39, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 45, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_line_even {
+  background: #e0f8f8;
+}
+/* line 49, D:/Code Ruby/DwN/app/assets/stylesheets/brands.scss */
+.brands .list_line_odd {
+  background: #f8b0f8;
+}
+/* START_HIGHLIGHT */
+/* line 6, D:/Code Ruby/DwN/app/assets/stylesheets/carts.scss */
+#cart {
+  margin-left: 30px;
+  float: left;
+}
+/* line 9, D:/Code Ruby/DwN/app/assets/stylesheets/carts.scss */
+#cart .item_price, #cart .total_line {
+  text-align: right;
+}
+/* line 12, D:/Code Ruby/DwN/app/assets/stylesheets/carts.scss */
+#cart .total_line .total_cell {
+  font-weight: bold;
+  border-top: 1px solid #595;
+}
+/* line 16, D:/Code Ruby/DwN/app/assets/stylesheets/carts.scss */
+#cart form, #cart div {
+  display: inline;
+}
+
+/* END_HIGHLIGHT */
+/* line 6, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products table {
+  width: 100%;
+}
+/* line 12, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+/* line 17, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_image {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/* line 23, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_description {
+  width: 60%;
+}
+/* line 26, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_description dl {
+  margin: 0;
+}
+/* line 30, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 36, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_description dd {
+  margin: 0;
+}
+/* line 41, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 47, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_line_even {
+  background: #d9d9d9;
+}
+/* line 51, D:/Code Ruby/DwN/app/assets/stylesheets/products.scss */
+.products .list_line_odd {
+  background: #f2f2f2;
+}
+/* line 5, D:/Code Ruby/DwN/app/assets/stylesheets/recommendation.scss */
+#rightside img {
+  width: 100px;
+  height: 100px;
+  margin-left: 110px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+/* line 16, D:/Code Ruby/DwN/app/assets/stylesheets/recommendation.scss */
+table {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 1, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 28, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, D:/Code Ruby/DwN/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/* line 5, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store {
+  /* An entry in the store catalog */
+}
+/* line 6, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store h1 {
+  margin: 0;
+  padding-bottom: 0.5em;
+  font: 150% sans-serif;
+  color: #226;
+}
+/* line 15, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store .box .entry {
+  overflow: auto;
+  float: left;
+  height: 250px;
+  width: 250px;
+  box-shadow: 0 0 4px black;
+  border: 1px solid grey;
+  padding: 20px 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+/* line 26, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store .box .entry table tr td {
+  width: 60%;
+  padding-bottom: 7px;
+}
+/* line 31, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store .box .entry img {
+  width: 80px;
+  margin-right: 0px;
+  position: absolute;
+}
+/* line 38, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store .box .entry h3 {
+  font-size: 120%;
+  font-family: sans-serif;
+  margin-left: 0px;
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #227;
+}
+/* line 47, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store .box .entry div {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 52, D:/Code Ruby/DwN/app/assets/stylesheets/store.css.scss */
+.store .box .entry .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 3em;
+}
+
+/* END_HIGHLIGHT */

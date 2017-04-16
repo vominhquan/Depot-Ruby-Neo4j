@@ -25,7 +25,7 @@ module DwN
 
     config.neo4j.session_type = :server_db
     config.neo4j.session_path = ENV["GRAPHENEDB_URL"] || 'http://localhost:7474'
-    config.neo4j.session_options = { basic_auth: { username: 'neo4j', password: '025547584'} }
+    config.neo4j.session_options = { basic_auth: { username: 'neo4j', password: '123456'} }
 
     # Configure where the embedded neo4j database should exist
     # Notice embedded db is only available for JRuby
